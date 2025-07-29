@@ -1,12 +1,15 @@
-🚗 Sistema de Mantenimiento de Automóviles – Frontend
+#🚗 Sistema de Mantenimiento de Automóviles – Frontend
+
 Este repositorio contiene el frontend del sistema web de mantenimiento de automóviles, una aplicación moderna desarrollada en React.js que permite a los usuarios autenticados visualizar, gestionar y registrar mantenimientos asociados a automóviles.
 
 Este sistema forma parte de una arquitectura full stack que interactúa con un backend construido en Python (FastAPI) y una base de datos PostgreSQL. Este repositorio se enfoca únicamente en la interfaz de usuario.
 
-🧠 Motivación del Proyecto
+#🧠 Motivación del Proyecto
+
 La necesidad de mantener registros ordenados y seguros sobre los mantenimientos, daños, reportes y estado general de los vehículos impulsó el desarrollo de este sistema. El objetivo es facilitar la digitalización de procesos, garantizar el acceso seguro y centralizado a la información, y permitir futuras integraciones con sistemas de análisis de datos e inteligencia artificial.
 
-🛠️ Tecnologías Utilizadas
+#🛠️ Tecnologías Utilizadas
+
 ⚛️ React.js – Librería principal para construir la interfaz.
 
 🧠 React Context API – Para manejo global del estado de autenticación.
@@ -43,14 +46,14 @@ frontend/
 │   └── setupTests.js        # Configuración para pruebas
 │
 └── package.json             # Dependencias y scripts del proyecto
-🔐 Rutas Protegidas
-El archivo App.js implementa un sistema de rutas protegidas. Solo los usuarios autenticados pueden acceder a las páginas /home y /mantenimiento, mientras que los usuarios no autenticados son redirigidos automáticamente al login (/).
 
-js
+# 🔐 Rutas Protegidas
+El archivo App.js implementa un sistema de rutas protegidas. Solo los usuarios autenticados pueden acceder a las páginas /home y /mantenimiento, mientras que los usuarios no autenticados son redirigidos automáticamente al login (/).
 
 <Route path="/home" element={<ProtectedRoute component={Home} />} />
 <Route path="/mantenimiento" element={<ProtectedRoute component={Mantenimiento} />} />
-🚀 Cómo Ejecutar el Proyecto
+
+# 🚀 Cómo Ejecutar el Proyecto
 1. Clonar el repositorio
 bash
 
